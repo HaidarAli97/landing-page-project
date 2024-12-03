@@ -276,4 +276,27 @@ h1 {
   color: #fff;
   font-size: 15px;
   cursor: pointer;
+}
+@media (max-width: 750px) {
+  .main .big-con .big-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .big-con .con-2 {
+    display: flex;
+  }
+  .main .big-con .con-2 h1 {
+    font-size: 2rem;
+  }
+  .main .big-con .rate-con {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .big-con .con-5 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -351,35 +351,35 @@ h1{
     
  }
  
-//  @media (max-width: 750px){
-//      .big-con{
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             align-items: center;
-//         }
+ @media (max-width: 750px){
+     .big-con{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         
-//         .con-2{
-//             display: flex;
+        .con-2{
+            display: flex;
             
-//             h1 {
-//                 font-size: 2rem;
-//             }
-//     }
+            h1 {
+                font-size: 2rem;
+            }
+    }
     
-//     .rate-con{
-//         display: flex;
-//         flex-direction: column;
-//     }
+    .rate-con{
+        display: flex;
+        flex-direction: column;
+    }
 
-//     .con-5, {
-//         flex-direction: column-reverse;
-//         justify-content: center;
-//         align-items: center;
-//     }
+    .con-5{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
     
     
-// }
+}
 }
  
 }
