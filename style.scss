@@ -46,6 +46,7 @@ h1{
 }
 
 .con-2{
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +85,7 @@ h1{
 }
 
 .rate-con{
-    height: 400px;
+    min-height: 400px;
     display: flex;
     margin-top: 100px;
     justify-content: space-evenly;
@@ -100,8 +101,8 @@ h1{
     }
 }
 
-.con-5{
-    height: 500px;
+.con-5, .con-6, .con-7{
+    min-height: 500px;
     min-width: 400px;
     background-color: #f5fdff;
     display: flex;
@@ -129,77 +130,15 @@ h1{
         
     }
     
-    
-    .con-6{
-    height: 500px;
-    min-width: 400px;
-    background-color: #f5fdff;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-
-
-    .con-img{
-        width: 60rem;
-    }
-
-    h1{
-        font-size: 3rem;
-    }
-
-    p{
-        color:#2D3F43;
-        font-weight: 500;
-        line-height: 25px;
-        font-size: 15px;
-    }
-    
-     .sub-con1{
-         margin-top: 100px;
-         margin-left: 70px;
-        }
-        
-    }
-    
-    
-    .con-7{
-    height: 500px;
-    min-width: 400px;
-    background-color: #f5fdff;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-
-
-    .con-img{
-        width: 60rem;
-    }
-    
-    h1{
-        font-size: 3rem;
-    }
-    
-    p{
-        color:#2D3F43;
-        font-weight: 200;
-        line-height: 25px;
-    }
-    
-  .sub-con1 {
-      margin-top: 100px;
-      margin-left: 70px;
-  }
-    
-}
 
 .con-8{
+    min-width: 200px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
-    justify-content: center;
-    place-items: center;
     margin-top: 50px;
     
     h1{
@@ -407,7 +346,7 @@ h1{
             h1 {
                 font-size: 3.2rem;
                 font-weight: 800;
-                align-self: center;
+                text-align: center;
             }
     }
     
@@ -424,15 +363,59 @@ h1{
         
     }
 
-    .con-5, .con-6, .con-7 {
-        width: 600px;
+
+    
+    .con-6{
+        background-color: #fff;
+    }
+
+    .con-8{
+        align-items: center;
+         
+    h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            text-align: center;
+        }
+    
+    }
+
+    .con-5, .con-6, .con-7, .rate-con {
         flex-direction: column-reverse;
         align-items: center;
-        margin:5% 5% 3% 3%;
-
+        justify-content: center;
+        margin: 5px 80px 200px;
+        text-align: center;
+        
+        
         p{
             font-size: 20px;
         }
+    }
+
+    .footer-con{
+        flex-direction: column-reverse;
+
+        .sub-con{
+            flex-direction: column;
+            position: relative;
+        }
+
+        #input {
+                width: 32rem !important;
+                height: 50px;
+                
+            }
+        
+            #input-btn {
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 50px;
+            }
+
+      
     }
 
     
