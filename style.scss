@@ -17,22 +17,11 @@ h1{
     color: #042832;
 }
 
-.main{
-    min-width: 100%;
-    max-height: 100vh;
-    padding: 1rem;
-
-    .big-con{
-        min-width:600px;
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-
-        
-        .header{
+.header{
         min-width: 45rem;
         max-height: 100px;
         display: flex;
+        padding: 1em;
         justify-content: space-between;
         
 
@@ -118,7 +107,6 @@ h1{
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-    border-radius: 15px;
     
     .con-img{
         width: 80rem;
@@ -134,22 +122,23 @@ h1{
         line-height: 25px;
     }
     
-     .sub-con1{
-         margin-top: 80px;
+        .sub-con1 {
+            margin-top: 100px;
+            margin-left: 70px;
         }
         
     }
     
     
     .con-6{
-        height: 500px;
-        min-width: 400px;
+    height: 500px;
+    min-width: 400px;
     background-color: #f5fdff;
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-    border-radius: 15px;
-    
+
+
     .con-img{
         width: 60rem;
     }
@@ -174,14 +163,14 @@ h1{
     
     
     .con-7{
-        height: 500px;
+    height: 500px;
     min-width: 400px;
     background-color: #f5fdff;
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-    border-radius: 15px;
-    
+
+
     .con-img{
         width: 60rem;
     }
@@ -196,10 +185,10 @@ h1{
         line-height: 25px;
     }
     
-    .sub-con1{
-        margin-top: 100px;
-        margin-right: 100px;
-    }
+  .sub-con1 {
+      margin-top: 100px;
+      margin-left: 70px;
+  }
     
 }
 
@@ -347,39 +336,106 @@ h1{
 
             
         }
+
     }
     
- }
+}
+
+.form-sec{
+    min-width: 600px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5fdff;
+    margin: 3% 2%;
+
+    h1{
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #form{
+        min-width: 400px;
+        min-height: 400px;
+        // background-color:#FD53C0;
+        display: flex;
+        flex-direction: column;
+        margin: 2% 1%;
+        gap: 20px;
+
+        input{
+            min-height: 50px;
+            border-radius: 5px;
+            background-color:#2e3233;
+            font-size: medium;
+            color: #fff;
+        }
+
+        #Message{
+            min-height: 100px;
+        }
+
+        button{
+            min-height: 50px;
+            border-radius: 5px;
+            background-color: #2e3233;
+            background-color:#2D3F43;
+            color: #f5fdff;
+            transition: .10s;
+            font-size:20px;
+            cursor: pointer;
+            
+
+            &:hover{
+                background-color:#8E959B;
+                color:#01262F;
+            }
+        }
+    }
+}
+
+
+
+ 
  
  @media (max-width: 750px){
-     .big-con{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
         .con-2{
             display: flex;
-            
+
             h1 {
-                font-size: 2rem;
+                font-size: 3.2rem;
+                font-weight: 800;
+                align-self: center;
             }
     }
     
     .rate-con{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin: 50px 50px;
+
+        p{
+            margin-bottom:100px;
+        }
+            
+        
     }
 
-    .con-5{
+    .con-5, .con-6, .con-7 {
+        width: 600px;
         flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
+        margin:5% 5% 3% 3%;
+
+        p{
+            font-size: 20px;
+        }
     }
+
     
     
-}
-}
- 
+    
 }

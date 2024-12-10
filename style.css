@@ -17,23 +17,14 @@ h1 {
   color: #042832;
 }
 
-.main {
-  min-width: 100%;
-  max-height: 100vh;
-  padding: 1rem;
-}
-.main .big-con {
-  min-width: 600px;
-  display: flex;
-  flex-direction: column;
-}
-.main .big-con .header {
+.header {
   min-width: 45rem;
   max-height: 100px;
   display: flex;
+  padding: 1em;
   justify-content: space-between;
 }
-.main .big-con .header .header-btn {
+.header .header-btn {
   width: 12rem;
   height: 40px;
   color: #FD53C0;
@@ -42,10 +33,11 @@ h1 {
   background-color: #fff;
   cursor: pointer;
 }
-.main .big-con .header .header-btn:hover {
+.header .header-btn:hover {
   box-shadow: 1px -1px 4px 3px;
 }
-.main .big-con .con-2 {
+
+.con-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,11 +45,11 @@ h1 {
   margin-top: 150px;
   padding: 3.2rem;
 }
-.main .big-con .con-2 h1 {
+.con-2 h1 {
   font-size: 2.5rem;
   font-weight: 800;
 }
-.main .big-con .con-2 p {
+.con-2 p {
   color: #8E959B;
   margin-top: 30px;
   width: 600px;
@@ -66,7 +58,7 @@ h1 {
   font-weight: 300;
   text-align: center;
 }
-.main .big-con .con-2 .con-2-btn {
+.con-2 .con-2-btn {
   margin-top: 30px;
   width: 22rem;
   height: 4.5rem;
@@ -76,93 +68,96 @@ h1 {
   color: #fff;
   cursor: pointer;
 }
-.main .big-con .rate-con {
+
+.rate-con {
   height: 400px;
   display: flex;
   margin-top: 100px;
   justify-content: space-evenly;
 }
-.main .big-con .rate-con h1 {
+.rate-con h1 {
   font-size: 5rem;
 }
-.main .big-con .rate-con p {
+.rate-con p {
   font-size: 20px;
   font-weight: 200;
   color: #8E959B;
 }
-.main .big-con .con-5 {
+
+.con-5 {
   height: 500px;
   min-width: 400px;
   background-color: #f5fdff;
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  border-radius: 15px;
 }
-.main .big-con .con-5 .con-img {
+.con-5 .con-img {
   width: 80rem;
 }
-.main .big-con .con-5 h1 {
+.con-5 h1 {
   font-size: 3rem;
 }
-.main .big-con .con-5 p {
+.con-5 p {
   color: #2D3F43;
   font-weight: 200;
   line-height: 25px;
 }
-.main .big-con .con-5 .sub-con1 {
-  margin-top: 80px;
+.con-5 .sub-con1 {
+  margin-top: 100px;
+  margin-left: 70px;
 }
-.main .big-con .con-6 {
+
+.con-6 {
   height: 500px;
   min-width: 400px;
   background-color: #f5fdff;
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  border-radius: 15px;
 }
-.main .big-con .con-6 .con-img {
+.con-6 .con-img {
   width: 60rem;
 }
-.main .big-con .con-6 h1 {
+.con-6 h1 {
   font-size: 3rem;
 }
-.main .big-con .con-6 p {
+.con-6 p {
   color: #2D3F43;
   font-weight: 500;
   line-height: 25px;
   font-size: 15px;
 }
-.main .big-con .con-6 .sub-con1 {
+.con-6 .sub-con1 {
   margin-top: 100px;
   margin-left: 70px;
 }
-.main .big-con .con-7 {
+
+.con-7 {
   height: 500px;
   min-width: 400px;
   background-color: #f5fdff;
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  border-radius: 15px;
 }
-.main .big-con .con-7 .con-img {
+.con-7 .con-img {
   width: 60rem;
 }
-.main .big-con .con-7 h1 {
+.con-7 h1 {
   font-size: 3rem;
 }
-.main .big-con .con-7 p {
+.con-7 p {
   color: #2D3F43;
   font-weight: 200;
   line-height: 25px;
 }
-.main .big-con .con-7 .sub-con1 {
+.con-7 .sub-con1 {
   margin-top: 100px;
-  margin-right: 100px;
+  margin-left: 70px;
 }
-.main .big-con .con-8 {
+
+.con-8 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,10 +167,10 @@ h1 {
   place-items: center;
   margin-top: 50px;
 }
-.main .big-con .con-8 h1 {
+.con-8 h1 {
   font-size: 50px;
 }
-.main .big-con .con-8 .con-8-btn {
+.con-8 .con-8-btn {
   height: 90px;
   width: 450px;
   margin-top: 50px;
@@ -187,10 +182,11 @@ h1 {
   cursor: pointer;
   border: 1px solid #FD53C0;
 }
-.main .big-con .con-8 .con-8-btn:hover {
+.con-8 .con-8-btn:hover {
   box-shadow: -2px -2px 1px 1px;
 }
-.main .big-con .footer-con {
+
+.footer-con {
   display: flex;
   background-color: #01262F;
   border-radius: 15px;
@@ -198,77 +194,77 @@ h1 {
   color: #fff;
   padding: 1rem;
 }
-.main .big-con .footer-con .con-1 {
+.footer-con .con-1 {
   min-width: 500px;
   margin-top: 100px;
 }
-.main .big-con .footer-con .con-1 p {
+.footer-con .con-1 p {
   font-size: 1rem;
   color: #8E959B;
   line-height: 25px;
 }
-.main .big-con .footer-con .con-1 .footer-hoodle {
+.footer-con .con-1 .footer-hoodle {
   color: #fff;
 }
-.main .big-con .footer-con .con-1 .huddle {
+.footer-con .con-1 .huddle {
   position: relative;
   margin-bottom: 40px;
 }
-.main .big-con .footer-con .con-1 .huddle h1 {
+.footer-con .con-1 .huddle h1 {
   position: absolute;
   left: 50px;
   bottom: -15px;
   font-size: 60px;
   color: #fff;
 }
-.main .big-con .footer-con .con-1 .huddle .img-icon {
+.footer-con .con-1 .huddle .img-icon {
   color: #fff;
   font-size: 0.5rem;
 }
-.main .big-con .footer-con .con-1 .phone, .main .big-con .footer-con .con-1 .mail {
+.footer-con .con-1 .phone, .footer-con .con-1 .mail {
   display: flex;
   margin-top: 20px;
 }
-.main .big-con .footer-con .con-1 .msg {
+.footer-con .con-1 .msg {
   position: relative;
 }
-.main .big-con .footer-con .con-1 .msg p {
+.footer-con .con-1 .msg p {
   position: absolute;
   left: 30px;
 }
-.main .big-con .footer-con .con-1 .msg .phone {
+.footer-con .con-1 .msg .phone {
   margin-top: 50px;
 }
-.main .big-con .footer-con .con-1 .icons {
+.footer-con .con-1 .icons {
   max-width: 150px;
   display: flex;
   justify-content: space-between;
   font-size: 30px;
   margin-top: 80px;
 }
-.main .big-con .footer-con .con-2 {
+.footer-con .con-2 {
   max-width: 600px;
   margin-top: 5px;
 }
-.main .big-con .footer-con .con-2 h2 {
+.footer-con .con-2 h2 {
   color: #FEFEFF;
 }
-.main .big-con .footer-con .con-2 p {
+.footer-con .con-2 p {
   font-size: 1rem;
 }
-.main .big-con .footer-con .con-2 .sub-con {
+.footer-con .con-2 .sub-con {
   display: flex;
   margin-top: 40px;
   gap: 50px;
 }
-.main .big-con .footer-con .con-2 .sub-con #input {
+.footer-con .con-2 .sub-con #input {
   width: 18rem;
   height: 40px;
   border-radius: 5px;
   font-size: 20px;
   border: none;
 }
-.main .big-con .footer-con .con-2 .sub-con #input-btn {
+.footer-con .con-2 .sub-con #input-btn {
   width: 200px;
   border-radius: 5px;
   border: none;
@@ -277,26 +273,79 @@ h1 {
   font-size: 15px;
   cursor: pointer;
 }
+
+.form-sec {
+  min-width: 600px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5fdff;
+  margin: 3% 2%;
+}
+.form-sec h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.form-sec #form {
+  min-width: 400px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 1%;
+  gap: 20px;
+}
+.form-sec #form input {
+  min-height: 50px;
+  border-radius: 5px;
+  background-color: #2e3233;
+  font-size: medium;
+  color: #fff;
+}
+.form-sec #form #Message {
+  min-height: 100px;
+}
+.form-sec #form button {
+  min-height: 50px;
+  border-radius: 5px;
+  background-color: #2e3233;
+  background-color: #2D3F43;
+  color: #f5fdff;
+  transition: 0.1s;
+  font-size: 20px;
+  cursor: pointer;
+}
+.form-sec #form button:hover {
+  background-color: #8E959B;
+  color: #01262F;
+}
+
 @media (max-width: 750px) {
-  .main .big-con .big-con {
+  .con-2 {
+    display: flex;
+  }
+  .con-2 h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    align-self: center;
+  }
+  .rate-con {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: 50px 50px;
   }
-  .main .big-con .con-2 {
-    display: flex;
+  .rate-con p {
+    margin-bottom: 100px;
   }
-  .main .big-con .con-2 h1 {
-    font-size: 2rem;
-  }
-  .main .big-con .rate-con {
-    display: flex;
-    flex-direction: column;
-  }
-  .main .big-con .con-5 {
+  .con-5, .con-6, .con-7 {
+    width: 600px;
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
+    margin: 5% 5% 3% 3%;
+  }
+  .con-5 p, .con-6 p, .con-7 p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
