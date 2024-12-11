@@ -273,7 +273,7 @@ h1 {
   color: #01262F;
 }
 
-@media (max-width: 750px) {
+@media (width <= 750px) {
   .con-2 {
     display: flex;
   }
