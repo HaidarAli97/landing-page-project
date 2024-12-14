@@ -10,15 +10,22 @@ img {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #042832;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+}
+
+p {
+  max-width: 100%;
 }
 
 .header {
-  min-width: 45rem;
+  width: 100%;
   max-height: 100px;
   display: flex;
   padding: 1em;
@@ -46,14 +53,9 @@ h1 {
   margin-top: 150px;
   padding: 3.2rem;
 }
-.con-2 h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-}
 .con-2 p {
   color: #8E959B;
   margin-top: 30px;
-  width: 600px;
   line-height: 30px;
   font-size: 18px;
   font-weight: 300;
@@ -61,7 +63,7 @@ h1 {
 }
 .con-2 .con-2-btn {
   margin-top: 30px;
-  width: 22rem;
+  min-width: 250px;
   height: 4.5rem;
   border-radius: 50px;
   border: none;
@@ -76,9 +78,6 @@ h1 {
   margin-top: 100px;
   justify-content: space-evenly;
 }
-.rate-con h1 {
-  font-size: 5rem;
-}
 .rate-con p {
   font-size: 20px;
   font-weight: 200;
@@ -90,18 +89,12 @@ h1 {
 }
 
 .con-5, .con-6, .con-7 {
-  min-height: 500px;
-  min-width: 400px;
+  min-width: 250px;
+  text-align: center;
   background-color: #f5fdff;
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-}
-.con-5 .con-img, .con-6 .con-img, .con-7 .con-img {
-  width: 80rem;
-}
-.con-5 h1, .con-6 h1, .con-7 h1 {
-  font-size: 3rem;
 }
 .con-5 p, .con-6 p, .con-7 p {
   color: #2D3F43;
@@ -110,7 +103,6 @@ h1 {
 }
 .con-5 .sub-con1, .con-6 .sub-con1, .con-7 .sub-con1 {
   margin-top: 100px;
-  margin-left: 70px;
 }
 
 .con-8 {
@@ -120,15 +112,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
   margin-top: 50px;
 }
-.con-8 h1 {
-  font-size: 50px;
-}
 .con-8 .con-8-btn {
-  height: 90px;
-  width: 450px;
   margin-top: 50px;
   background-color: #FD53C0;
   border-radius: 50px;
@@ -143,15 +129,22 @@ h1 {
 }
 
 .footer-con {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #01262F;
   border-radius: 15px;
   border: 10px solid #2e3233;
   color: #fff;
   padding: 1rem;
 }
+.footer-con .con-1, .footer-con .con-2 {
+  flex: 1;
+  flex-basis: 48%;
+  max-width: 600px;
+}
 .footer-con .con-1 {
-  min-width: 500px;
   margin-top: 100px;
 }
 .footer-con .con-1 p {
@@ -170,7 +163,6 @@ h1 {
   position: absolute;
   left: 50px;
   bottom: -15px;
-  font-size: 60px;
   color: #fff;
 }
 .footer-con .con-1 .huddle .img-icon {
@@ -199,7 +191,7 @@ h1 {
   margin-top: 80px;
 }
 .footer-con .con-2 {
-  max-width: 600px;
+  width: 100%;
   margin-top: 5px;
 }
 .footer-con .con-2 h2 {
@@ -209,55 +201,42 @@ h1 {
   font-size: 1rem;
 }
 .footer-con .con-2 .sub-con {
+  width: 100%;
   display: flex;
+  justify-content: center;
   margin-top: 40px;
   gap: 50px;
 }
-.footer-con .con-2 .sub-con #input {
-  width: 18rem;
-  height: 40px;
+.footer-con .con-2 .sub-con .sub-con-inputes {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-size: 20px;
   border: none;
 }
 .footer-con .con-2 .sub-con #input-btn {
-  width: 200px;
-  border-radius: 5px;
-  border: none;
   background-color: #FD53C0;
   color: #fff;
-  font-size: 15px;
   cursor: pointer;
 }
 
 .form-sec {
-  min-width: 600px;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
   align-items: center;
   background-color: #f5fdff;
-  margin: 3% 2%;
-}
-.form-sec h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
 }
 .form-sec #form {
-  min-width: 400px;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  margin: 2% 1%;
-  gap: 20px;
+  min-width: 250px;
+  max-width: 600px;
+  padding: 1rem;
 }
-.form-sec #form input {
-  min-height: 50px;
+.form-sec #form .input-fields {
+  width: 100%;
   border-radius: 5px;
   background-color: #2e3233;
-  font-size: medium;
+  font-size: 1rem;
   color: #fff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
 }
 .form-sec #form #Message {
   min-height: 100px;
@@ -269,22 +248,18 @@ h1 {
   background-color: #2D3F43;
   color: #f5fdff;
   transition: 0.1s;
-  font-size: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .form-sec #form button:hover {
   background-color: #8E959B;
   color: #01262F;
+  box-shadow: -5px 10px 5px -10px;
 }
 
-@media (width <= 750px) {
+@media (width <= 768px) {
   .con-2 {
     display: flex;
-  }
-  .con-2 h1 {
-    font-size: 3.2rem;
-    font-weight: 800;
-    text-align: center;
   }
   .rate-con {
     display: flex;
@@ -301,37 +276,24 @@ h1 {
   .con-8 {
     align-items: center;
   }
-  .con-8 h1 {
-    font-size: 3.2rem;
-    font-weight: 800;
-    text-align: center;
-  }
   .con-5, .con-6, .con-7, .rate-con {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     margin: 5px 80px 200px;
     text-align: center;
+    margin-inline: auto;
   }
   .con-5 p, .con-6 p, .con-7 p, .rate-con p {
     font-size: 20px;
   }
-  .footer-con {
-    flex-direction: column-reverse;
+  .footer-con .con-1, .footer-con .con-2 {
+    flex-basis: 100%;
   }
   .footer-con .sub-con {
     flex-direction: column;
-    position: relative;
   }
-  .footer-con #input {
-    width: 32rem !important;
-    height: 50px;
-  }
-  .footer-con #input-btn {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    height: 50px;
+  .footer-con .sub-con #input-btn {
+    align-self: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */

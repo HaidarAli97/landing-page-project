@@ -10,15 +10,21 @@ img {
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #042832;
+    font-size: clamp(2rem, 5vw, 4rem);
+        font-weight: 800;
+}
+p{
+    max-width: 100%;
 }
 
 .header{
-        min-width: 45rem;
+        width: 100%;
         max-height: 100px;
         display: flex;
         padding: 1em;
@@ -54,15 +60,12 @@ h1{
     margin-top: 150px;
     padding: 3.2rem;
     
-    h1{
-        font-size: 2.5rem;
-        font-weight: 800;
-    }
+ 
     
     p{
         color: #8E959B;
         margin-top: 30px;
-        width: 600px;
+        // width: 600px;
         line-height: 30px;
         font-size: 18px;
         font-weight: 300;
@@ -72,7 +75,7 @@ h1{
     
     .con-2-btn{
         margin-top: 30px;
-        width: 22rem;
+        min-width: 250px;
         height: 4.5rem;
         border-radius: 50px;
         border: none;
@@ -90,9 +93,7 @@ h1{
     margin-top: 100px;
     justify-content: space-evenly;
     
-    h1{
-        font-size: 5rem;
-    }
+ 
 
     p{
         font-size: 20px;
@@ -105,21 +106,14 @@ h1{
 }
 
 .con-5, .con-6, .con-7{
-    min-height: 500px;
-    min-width: 400px;
+    min-width: 250px;
+    text-align: center;
     background-color: #f5fdff;
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
     
-    .con-img{
-        width: 80rem;
-    }
-    
-    h1{
-        font-size: 3rem;
-    }
-
+   
     p{
         color:#2D3F43;
         font-weight: 200;
@@ -128,7 +122,6 @@ h1{
     
         .sub-con1 {
             margin-top: 100px;
-            margin-left: 70px;
         }
         
     }
@@ -141,16 +134,11 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
     margin-top: 50px;
     
-    h1{
-        font-size: 50px;
-    }
+
 
     .con-8-btn{
-        height: 90px;
-        width: 450px;
         margin-top: 50px;
         background-color: #FD53C0;
         border-radius: 50px;
@@ -169,16 +157,23 @@ h1{
 }
 
 .footer-con{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color:#01262F;
     border-radius: 15px;
     border: 10px solid #2e3233;
     color: #fff;
     padding: 1rem;
 
-    
+    .con-1, .con-2 {
+        flex: 1;
+        flex-basis: 48%;
+        max-width: 600px;
+    }
+
     .con-1{
-        min-width: 500px;
        margin-top: 100px;
        
        p {
@@ -199,7 +194,6 @@ h1{
                 position: absolute;
                 left: 50px;
                 bottom: -15px;
-                font-size: 60px;
                 color: #fff;
             }
 
@@ -241,7 +235,7 @@ h1{
     }
 
     .con-2{
-        max-width: 600px;
+        width: 100%;
         margin-top: 5px; 
         
         h2{
@@ -253,25 +247,23 @@ h1{
         }
         
         .sub-con{
+            width: 100%;
             display: flex;
+            justify-content: center;
             margin-top: 40px;
             gap: 50px;
 
-            #input{
-                width: 18rem;
-                height: 40px;
+            .sub-con-inputes {
+                font-size: 1.3rem;
+                padding: .5rem 1rem;
                 border-radius: 5px;
-                font-size: 20px;
-                border: none;
+                    border: none;
             }
 
+      
             #input-btn{
-                width: 200px;
-                border-radius: 5px;
-                border: none;
                 background-color: #FD53C0;
                 color: #fff;
-                font-size: 15px;
                 cursor: pointer;
             }
             
@@ -284,35 +276,25 @@ h1{
 }
 
 .form-sec{
-    min-width: 600px;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
     align-items: center;
     background-color: #f5fdff;
-    margin: 3% 2%;
 
-    h1{
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
+
 
     #form{
-        min-width: 400px;
-        min-height: 400px;
-        // background-color:#FD53C0;
-        display: flex;
-        flex-direction: column;
-        margin: 2% 1%;
-        gap: 20px;
+        min-width: 250px;
+        max-width: 600px;
+        padding: 1rem;
 
-        input{
-            min-height: 50px;
+        .input-fields{
+            width: 100%;
             border-radius: 5px;
             background-color:#2e3233;
-            font-size: medium;
+            font-size: 1rem;
             color: #fff;
+            padding: .5rem 1rem;
+            margin-bottom: 1rem;
         }
 
         #Message{
@@ -326,13 +308,15 @@ h1{
             background-color:#2D3F43;
             color: #f5fdff;
             transition: .10s;
-            font-size:20px;
+            font-size: 1.2rem;
             cursor: pointer;
+        
             
 
             &:hover{
                 background-color:#8E959B;
                 color:#01262F;
+                    box-shadow: -5px 10px 5px -10px;
             }
         }
     }
@@ -341,16 +325,9 @@ h1{
 
 
  
- 
- @media (width <= 750px){
+ @media (width <= 768px){
         .con-2{
             display: flex;
-
-            h1 {
-                font-size: 3.2rem;
-                font-weight: 800;
-                text-align: center;
-            }
     }
     
     .rate-con{
@@ -366,8 +343,6 @@ h1{
         
     }
 
-
-    
     .con-6{
         background-color: #fff;
     }
@@ -375,11 +350,7 @@ h1{
     .con-8{
         align-items: center;
          
-    h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            text-align: center;
-        }
+ 
     
     }
 
@@ -389,6 +360,7 @@ h1{
         justify-content: center;
         margin: 5px 80px 200px;
         text-align: center;
+        margin-inline: auto;
         
         
         p{
@@ -397,31 +369,21 @@ h1{
     }
 
     .footer-con{
-        flex-direction: column-reverse;
+
+        .con-1,  .con-2 {
+            flex-basis: 100%;
+        }
+
+
 
         .sub-con{
             flex-direction: column;
-            position: relative;
+            #input-btn {
+             align-self: flex-end;
+            }
         }
 
-        #input {
-                width: 32rem !important;
-                height: 50px;
-                
-            }
-        
-            #input-btn {
-                position: absolute;
-                top: 80px;
-                right: 0;
-                width: 200px;
-                height: 50px;
-            }
-
       
+        
     }
-
-    
-    
-    
 }
