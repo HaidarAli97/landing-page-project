@@ -10,18 +10,22 @@ img {
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    scroll-behavior: smooth;
 }
 
 h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #042832;
     font-size: clamp(2rem, 5vw, 4rem);
-        font-weight: 800;
+    font-weight: 800;
+}
+
+h2{
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 p{
     max-width: 100%;
 }
+
 
 .header{
         width: 100%;
@@ -33,13 +37,13 @@ p{
 
 
     .header-btn{
-        width: 12rem;
-        height: 40px;
+        padding: .4rem;
         color: #FD53C0;
         border-radius: 20px;
         border: 1px solid #fd53bff8;
         background-color: #fff;
         cursor: pointer;
+
 
         &:hover{
             box-shadow:  1px -1px 4px 3px;
@@ -59,13 +63,16 @@ p{
     align-items: center;
     margin-top: 150px;
     padding: 3.2rem;
+
+    h1{
+        text-align: center;
+    }
     
  
     
     p{
         color: #8E959B;
         margin-top: 30px;
-        // width: 600px;
         line-height: 30px;
         font-size: 18px;
         font-weight: 300;
@@ -75,8 +82,7 @@ p{
     
     .con-2-btn{
         margin-top: 30px;
-        min-width: 250px;
-        height: 4.5rem;
+        padding: 1rem;
         border-radius: 50px;
         border: none;
         background-color: #FD53C0;
@@ -113,7 +119,6 @@ p{
     justify-content: space-between;
     margin-top: 60px;
     
-   
     p{
         color:#2D3F43;
         font-weight: 200;
@@ -139,7 +144,8 @@ p{
 
 
     .con-8-btn{
-        margin-top: 50px;
+        padding: .8rem;
+        margin: 50px 20px;
         background-color: #FD53C0;
         border-radius: 50px;
         font-size: 1.5rem;
@@ -148,22 +154,42 @@ p{
         cursor: pointer;
         border: 1px solid #FD53C0;
 
+
         &:hover{
-            
             box-shadow: -2px -2px 1px 1px;
         }
 
     }
 }
 
+.contact{
+    position: fixed;
+    top:2.5rem;
+    inset: 1;
+    background-color:#FD53C0;
+    margin: 1.5rem 1rem;
+    max-width: 150px;
+    border-radius: 100px;
+    padding: .5rem;
+    cursor: pointer;
+
+    button{
+        border-radius: 10px;
+        background-color: #FD53C0;
+        border: none;
+        cursor: pointer;
+    }
+
+
+}
+
 .footer-con{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: center;
     background-color:#01262F;
-    border-radius: 15px;
-    border: 10px solid #2e3233;
+    border-top: 10px solid #2e3233;
     color: #fff;
     padding: 1rem;
 
@@ -276,15 +302,23 @@ p{
 }
 
 .form-sec{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: #f5fdff;
+
 
 
 
     #form{
         min-width: 250px;
         max-width: 600px;
+        background-color: #2c2b2c;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
         padding: 1rem;
 
         .input-fields{
@@ -298,6 +332,7 @@ p{
         }
 
         #Message{
+            text-align:start;
             min-height: 100px;
         }
 
@@ -310,6 +345,7 @@ p{
             transition: .10s;
             font-size: 1.2rem;
             cursor: pointer;
+
         
             
 
@@ -326,8 +362,16 @@ p{
 
  
  @media (width <= 768px){
+.header{
+    img{
+        width: 50%;
+    }
+}
+
         .con-2{
             display: flex;
+
+            
     }
     
     .rate-con{
@@ -349,6 +393,7 @@ p{
 
     .con-8{
         align-items: center;
+        text-align: center;
          
  
     
@@ -369,6 +414,8 @@ p{
     }
 
     .footer-con{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
 
         .con-1,  .con-2 {
             flex-basis: 100%;
@@ -378,6 +425,7 @@ p{
 
         .sub-con{
             flex-direction: column;
+
             #input-btn {
              align-self: flex-end;
             }
